@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSSFiles/welcomePage.css">
     <title>Welcome Page</title>
+    <script defer>
+        function changeColor(color) {
+            const p = document.getElementById("name");
+            p.style.color = color;
+        }
+    </script>
 </head>
 
 <body>
     <div id="container">
-        <p>Welcome Shams Aziz</p>
+        <p id="name">Welcome Shams Aziz</p>
         <div id="options">
             <div>
-                <input type="radio" id="red" name="color" value="red">
+                <input type="radio" id="red" name="color" value="red" onclick="changeColor('red')">
                 <label>Red</label>
             </div>
             <div>
-                <input type="radio" id="blue" name="color" value="blue">
+                <input type="radio" id="blue" name="color" value="blue" onclick="changeColor('blue')">
                 <label>Blue</label>
             </div>
 
             <div>
-                <input type="radio" id="green" name="color" value="green">
+                <input type="radio" id="green" name="color" value="green" onclick="changeColor('green')">
                 <label>Green</label>
             </div>
 
             <div>
-                <input type="radio" id="orange" name="color" value="orange">
+                <input type="radio" id="orange" name="color" value="orange" onclick="changeColor('orange')">
                 <label>Orange</label>
             </div>
         </div>
