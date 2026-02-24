@@ -160,9 +160,35 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  #container form .labelInput label {
+    font-size: 15px;
+  }
   #container form .labelInput input,
   #container form .labelInput textarea {
     grid-column: 2/6;
+    font-size: 16px;
+  }
+  #container form .labelInput input {
+    height: 30px;
+  }
+  #container form #qualification label {
+    font-size: 15px;
+  }
+  #container form #specialization #specializationLabel {
+    font-size: 15px;
+  }
+  #container form #specialization #options div label {
+    font-size: 15px;
+  }
+  #container form .gender #genderLabel {
+    font-size: 15px;
+  }
+  #container form .gender #genderMale label,
+  #container form .gender #genderFemale label {
+    font-size: 15px;
+  }
+  #container form #registerDiv #registerButton {
+    font-size: 10px;
   }
 }
 

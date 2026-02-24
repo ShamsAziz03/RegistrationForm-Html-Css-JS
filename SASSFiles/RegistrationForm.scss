@@ -164,11 +164,61 @@ body {
         form {
             .labelInput {
 
+                label {
+                    font-size: 15px;
+                }
+
                 input,
                 textarea {
                     grid-column: 2 / 6;
+                    font-size: 16px;
+                }
+
+                input {
+                    height: 30px;
                 }
             }
+
+            #qualification {
+
+                label {
+                    font-size: 15px;
+                }
+            }
+
+            #specialization {
+                #specializationLabel {
+                    font-size: 15px;
+                }
+
+                #options {
+                    div {
+                        label {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .gender {
+                #genderLabel {
+                    font-size: 15px;
+                }
+
+                #genderMale,
+                #genderFemale {
+                    label {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            #registerDiv {
+                #registerButton {
+                    font-size: 10px;
+                }
+            }
+
         }
     }
 }
