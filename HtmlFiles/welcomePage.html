@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSSFiles/welcomePage.css">
     <title>Welcome Page</title>
-    <script defer>
-        function changeColor(color) {
-            const p = document.getElementById("name");
-            p.style.color = color;
-        }
-    </script>
+    <script src="../JSFiles/welcomePage.js" defer></script>
 </head>
 
 <body>
     <div id="container">
-        <p id="name">Welcome Shams Aziz</p>
+        <p id="name"></p>
         <div id="options">
             <div>
                 <input type="radio" id="red" name="color" value="red" onclick="changeColor('red')">
