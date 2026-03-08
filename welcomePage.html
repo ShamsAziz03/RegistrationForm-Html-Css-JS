@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSSFiles/welcomePage.css">
+    <title>Welcome Page</title>
+    <script src="./JSFiles/welcomePage.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <p id="name"></p>
+        <div id="options">
+            <div>
+                <input type="radio" id="red" name="color" value="red" onclick="changeColor('red')">
+                <label>Red</label>
+            </div>
+            <div>
+                <input type="radio" id="blue" name="color" value="blue" onclick="changeColor('blue')">
+                <label>Blue</label>
+            </div>
+
+            <div>
+                <input type="radio" id="green" name="color" value="green" onclick="changeColor('green')">
+                <label>Green</label>
+            </div>
+
+            <div>
+                <input type="radio" id="orange" name="color" value="orange" onclick="changeColor('orange')">
+                <label>Orange</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
