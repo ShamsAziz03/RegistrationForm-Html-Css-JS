@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+#container div h2 {
+  padding-left: 10px;
+  flex: 1;
+  color: brown;
+  font-size: 20px;
+  text-decoration: underline;
+  float: left;
+}
+#container form {
+  flex: 3;
+  background-color: rgb(243, 243, 243);
+}
+#container form .labelInput {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#container form .labelInput label {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+}
+#container form .labelInput input,
+#container form .labelInput textarea {
+  grid-row: 1/2;
+  grid-column: 2/5;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 15px;
+}
+#container form .labelInput input {
+  height: 45px;
+}
+#container form .gender {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#container form .gender #genderLabel {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+}
+#container form .gender #genderMale {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  align-self: center;
+}
+#container form .gender #genderMale label {
+  font-size: 19px;
+}
+#container form .gender #genderFemale {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  align-self: center;
+}
+#container form .gender #genderFemale label {
+  font-size: 19px;
+}
+#container form #registerDiv {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#container form #registerDiv #registerButton {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+  background-color: rgb(62, 106, 62);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#container form #qualification {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#container form #qualification label {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+}
+#container form #qualification select {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 15px;
+}
+#container form #specialization {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#container form #specialization #specializationLabel {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+}
+#container form #specialization #options {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 15px;
+}
+#container form #specialization #options label {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  #container form .labelInput label {
+    font-size: 15px;
+  }
+  #container form .labelInput input,
+  #container form .labelInput textarea {
+    grid-column: 2/6;
+    font-size: 16px;
+  }
+  #container form .labelInput input {
+    height: 30px;
+  }
+  #container form #qualification label {
+    font-size: 15px;
+  }
+  #container form #specialization #specializationLabel {
+    font-size: 15px;
+  }
+  #container form #specialization #options div label {
+    font-size: 15px;
+  }
+  #container form .gender #genderLabel {
+    font-size: 15px;
+  }
+  #container form .gender #genderMale label,
+  #container form .gender #genderFemale label {
+    font-size: 15px;
+  }
+  #container form #registerDiv #registerButton {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=RegistrationForm.css.map */
